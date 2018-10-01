@@ -1,4 +1,5 @@
-# WoodsofYpres
+# WoodsofYpres .23 version 
+
 Genre: Dark Fantasy/Horror text based RPG
 
 Influence by: Diablo, HP Lovecraft, Rogue-likes. 
