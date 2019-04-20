@@ -1,6 +1,7 @@
 from collections import OrderedDict
 from player import Player
 import world
+import time 
 
 def play():
     print(r""" 
@@ -36,17 +37,17 @@ def play():
                               Dedicated to David Gold
                                                                                                 """)     
 
-    input("")
+    time.sleep(1)
     print("Falsely accused of heinous crimes ")
     print("You were sent south to the Woods Of Ypres ")
-    input("")
+    time.sleep(1)
     print("On the way to the heart of the Woods ")
     print("Your caravan was attacked. You blacked out")
-    input("")
+    time.sleep(1)
     print("You wake up surrounded by dead bodies")
     print("You gather some items and begin your quest to escape")
     print("The Woods Of Ypres..  ")
-    input("")
+    time.sleep(1)
     print("                       ")                                 
     world.parse_world_dsl()
     player=Player()  #this is an object without this no action can be done. 
