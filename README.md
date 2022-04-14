@@ -1,6 +1,6 @@
 # WoodsofYpres .23 version 
 
-Genre: Dark Fantasy/Horror text based RPG
+Genre: Dark Fantasy/Horror text based RPG   ( Not suitable for young children includes Adult themes ) 
 
 Influence by: Diablo, HP Lovecraft, Rogue-likes.
 
