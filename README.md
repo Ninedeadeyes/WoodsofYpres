@@ -10,7 +10,7 @@ To run game with python, click on game.py
 
 Special thanks to Phillip Johnson, check out his book  'Make your own python text adventure' 
 
-The foundation 'game engine was built using his book 
+The foundation 'game engine' was built using his book 
 
  
 
