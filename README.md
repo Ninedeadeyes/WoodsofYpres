@@ -1,4 +1,4 @@
-# WoodsofYpres .23 version 
+# WoodsofYpres 1.00 version 
 
 Genre: Dark Fantasy/Horror text based RPG   ( Not suitable for young children includes Adult themes ) 
 
@@ -8,7 +8,9 @@ To play the game click on the exe file
 To run game with python, click on game.py 
 
 
-Special thanks to Phillip Johnson, check out his book  ' Make your own python text adventure' 
+Special thanks to Phillip Johnson, check out his book  'Make your own python text adventure' 
+
+The foundation 'game engine was built using his book 
 
  
 
