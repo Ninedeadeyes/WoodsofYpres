@@ -16,11 +16,11 @@ class Player:
         self.y = world.start_tile_location[1]
         self.hp = 100
         self.gold= 10
-        self.power = 2
+        self.power = 4
         self.victory= False
         self.sanity = 10
         self.exp=0
-        self.powerup=1
+        self.powerup=4
         self.fullhp = 100
         self.armour=0
         self.mark=0
@@ -133,8 +133,8 @@ class Player:
             
             
             
-            if self.exp>40 and self.level2_claimed:
-                self.powerup=4
+            if self.exp>30 and self.level2_claimed:
+                self.powerup=6
                 self.hp= 120 
                 self.fullhp=120
                 print("You are now level 2 'The Struggler'  ")
@@ -142,24 +142,24 @@ class Player:
                 self.level2_claimed = False
                 
                          
-            if self.exp>80 and self.level3_claimed:
-                self.powerup=6  
+            if self.exp>60 and self.level3_claimed:
+                self.powerup=8  
                 self.hp= 130
                 self.fullhp=130
                 print("You are now level 3 'The Survivor'")
                 print("Current HP: {}".format(self.hp))
                 self.level3_claimed = False
                 
-            if self.exp>140 and self.level4_claimed:
-                self.powerup=8  
+            if self.exp>100 and self.level4_claimed:
+                self.powerup=10  
                 self.hp= 140 
                 self.fullhp=140
                 print("You are now level 4 'The Explorer' ")
                 print("Current HP: {}".format(self.hp))
                 self.level4_claimed = False 
                 
-            if self.exp>200 and self.level5_claimed:
-                self.powerup=10
+            if self.exp>150 and self.level5_claimed:
+                self.powerup=12
                 self.hp= 150 
                 self.fullhp=150
                 print("You are now level 5 'The Hunter'")
@@ -167,42 +167,42 @@ class Player:
                 self.level5_claimed = False
                 
                 
-            if self.exp>280 and self.level6_claimed:
-                self.powerup=12 
-                self.hp= 160
-                self.fullhp=160
+            if self.exp>210 and self.level6_claimed:
+                self.powerup=14 
+                self.hp= 200
+                self.fullhp=200
                 print("You are now level 6 'The Dissenter' ")
                 print("Current HP: {}".format(self.hp))
                 self.level6_claimed = False
            
-            if self.exp>360 and self.level7_claimed:
-               self.powerup=14 
-               self.hp= 170
-               self.fullhp=170
+            if self.exp>300 and self.level7_claimed:
+               self.powerup=16 
+               self.hp= 220
+               self.fullhp=220
                print("You are now level 7 'The Death Stalker' ")
                print("Current HP: {}".format(self.hp))
                self.level7_claimed = False 
                
-            if self.exp>440 and self.level8_claimed:
-               self.powerup=16 
-               self.hp= 180
-               self.fullhp=180
+            if self.exp>400 and self.level8_claimed:
+               self.powerup=18 
+               self.hp= 240
+               self.fullhp=240
                print("You are now level 8 'The Harbinger of Doom ' ")
                print("Current HP: {}".format(self.hp))
                self.level8_claimed = False    
              
             if self.exp>520 and self.level9_claimed:
-               self.powerup=18 
-               self.hp= 200
-               self.fullhp=200
+               self.powerup=20 
+               self.hp= 260
+               self.fullhp=260
                print("You are now level 9 'The Nightmare In The Woods ")
                print("Current HP: {}".format(self.hp))
                self.level9_claimed = False              
 
             if self.exp>600 and self.level10_claimed:
-               self.powerup=20 
-               self.hp= 220
-               self.fullhp=220
+               self.powerup=22 
+               self.hp= 280
+               self.fullhp=280
                print("You are now level 10 'The Master Killer of the Woods' ")
                print("Current HP: {}".format(self.hp))
                self.level10_claimed = False                             

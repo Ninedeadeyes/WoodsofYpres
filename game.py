@@ -2,6 +2,11 @@ from collections import OrderedDict
 from player import Player
 import world
 import time 
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')  
+
 
 def play():
     print(r""" 
@@ -48,7 +53,8 @@ def play():
     print("You gather some items and begin your quest to escape")
     print("The Woods Of Ypres..  ")
     time.sleep(1)
-    print("                       ")                                 
+    print("                       ")  
+                                
     world.parse_world_dsl()
     player=Player()  #this is an object without this no action can be done. 
     while player.is_alive()and player.is_sane() and not player.victory:
@@ -60,13 +66,17 @@ def play():
         elif player.is_alive()and not player.is_sane() and not player.victory:
             print("The beast in your mind has tracked you down")
             print("Madness has consumed you, welcome to the family, my rag sibling ")
+            time.sleep(2)
             input("Press enter to exit")
         elif not player.is_alive():
             print("You have been slain. Rest in Peace, fallen one !!")
+            time.sleep(2)
             input("Press enter to exit")
 
         
 def choose_action(room, player):
+    input("Press enter to continue")
+    clear_screen()
     action = None
     while not action:
         available_actions = get_available_actions(room, player)
@@ -85,22 +95,22 @@ def get_available_actions(room, player):
     if player.inventory:
         action_adder(actions, 'p', player.pick, "Select Weapon")
     if isinstance(room, world.BossTile) and room.enemy.is_alive():
-        action_adder(actions, 'a', player.attack, "Attack")        
+        action_adder(actions, 'f', player.attack, "Fight")        
     if isinstance(room, world.TraderTile):
         action_adder(actions, 't', player.trade, "Trade")  
     if isinstance(room, world.EnemyTile) and room.enemy.is_alive():
-        action_adder(actions, 'a', player.attack, "Attack")
+        action_adder(actions, 'f', player.attack, "Fight")
     
     
     else:
-        if world.tile_at(room.x, room.y - 1):
-            action_adder(actions, 'n', player.move_north, "Go north (Up)")
-        if world.tile_at(room.x, room.y + 1):                       
+        if world.tile_at(room.x, room.y - 1):     
+            action_adder(actions, 'w', player.move_north, "Go north (Up)")
+        if world.tile_at(room.x, room.y + 1):              
             action_adder(actions, 's', player.move_south, "Go south (Down)")
         if world.tile_at(room.x + 1, room.y):
-            action_adder(actions, 'e', player.move_east, "Go east (Right)")
+            action_adder(actions, 'd', player.move_east, "Go east (Right)")
         if world.tile_at(room.x - 1, room.y):
-            action_adder(actions, 'w', player.move_west, "Go west (Left)")
+            action_adder(actions, 'a', player.move_west, "Go west (Left)")
     if player.hp < player.fullhp:
         action_adder(actions, 'h', player.heal, "Heal")
 
@@ -117,4 +127,4 @@ def action_adder(action_dict, hotkey, action, name):
 
 play()  #A simple call to the play function
 
-https://github.com/Ninedeadeyes/WoodsofYpres
+#https://github.com/Ninedeadeyes/WoodsofYpres
