@@ -3,12 +3,17 @@ from player import Player
 import world
 import time 
 import os
+import winsound
 
 def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')  
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 
 def play():
+
+    winsound.PlaySound(".\\music\\background.wav",  winsound.SND_ALIAS | winsound.SND_ASYNC +winsound.SND_LOOP)
+    
     print(r""" 
 
 
