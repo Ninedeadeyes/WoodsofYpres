@@ -1,4 +1,4 @@
-# WoodsofYpres 1.00 version 
+# WoodsofYpres 1.01 version 
 
 Genre: Dark Fantasy/Horror text based RPG   ( Not suitable for young children includes Adult themes ) 
 
