@@ -131,9 +131,7 @@ class Player:
             print ("You gain {} experience ".format(enemy.exp))
             
             
-            
-            
-            if self.exp>30 and self.level2_claimed:
+            if self.exp>40 and self.level2_claimed:
                 self.powerup=6
                 self.hp= 120 
                 self.fullhp=120
@@ -142,7 +140,7 @@ class Player:
                 self.level2_claimed = False
                 
                          
-            if self.exp>60 and self.level3_claimed:
+            if self.exp>80 and self.level3_claimed:
                 self.powerup=8  
                 self.hp= 130
                 self.fullhp=130
@@ -150,7 +148,7 @@ class Player:
                 print("Current HP: {}".format(self.hp))
                 self.level3_claimed = False
                 
-            if self.exp>100 and self.level4_claimed:
+            if self.exp>140 and self.level4_claimed:
                 self.powerup=10  
                 self.hp= 140 
                 self.fullhp=140
@@ -158,7 +156,7 @@ class Player:
                 print("Current HP: {}".format(self.hp))
                 self.level4_claimed = False 
                 
-            if self.exp>150 and self.level5_claimed:
+            if self.exp>200 and self.level5_claimed:
                 self.powerup=12
                 self.hp= 150 
                 self.fullhp=150
@@ -167,7 +165,7 @@ class Player:
                 self.level5_claimed = False
                 
                 
-            if self.exp>210 and self.level6_claimed:
+            if self.exp>280 and self.level6_claimed:
                 self.powerup=14 
                 self.hp= 200
                 self.fullhp=200
@@ -175,7 +173,7 @@ class Player:
                 print("Current HP: {}".format(self.hp))
                 self.level6_claimed = False
            
-            if self.exp>300 and self.level7_claimed:
+            if self.exp>360 and self.level7_claimed:
                self.powerup=16 
                self.hp= 220
                self.fullhp=220
@@ -183,7 +181,7 @@ class Player:
                print("Current HP: {}".format(self.hp))
                self.level7_claimed = False 
                
-            if self.exp>400 and self.level8_claimed:
+            if self.exp>440 and self.level8_claimed:
                self.powerup=18 
                self.hp= 240
                self.fullhp=240
