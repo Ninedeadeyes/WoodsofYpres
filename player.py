@@ -16,7 +16,7 @@ class Player:
         self.y = world.start_tile_location[1]
         self.hp = 100
         self.gold= 10
-        self.power = 4
+        self.power = 3
         self.victory= False
         self.sanity = 10
         self.exp=0
