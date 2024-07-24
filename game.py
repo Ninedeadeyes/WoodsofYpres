@@ -10,10 +10,10 @@ def clear_screen():
 
 
 
-def play():
+def game():
 
     winsound.PlaySound(".\\music\\background.wav",  winsound.SND_ALIAS | winsound.SND_ASYNC +winsound.SND_LOOP)
-    
+ 
     print(r""" 
 
 
@@ -130,6 +130,6 @@ def action_adder(action_dict, hotkey, action, name):
 
     
 
-play()  #A simple call to the play function
+game()  #A simple call to the play function
 
 #https://github.com/Ninedeadeyes/WoodsofYpres

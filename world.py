@@ -1018,6 +1018,7 @@ class EnemyTile(MapTile):
                               A monster of unimaginable horror arrives.
                               Prepare for combat !!  
                               
+                              It is a Dark Young of SubNiggurath !! 
          
                                 """ 
                                
@@ -1031,7 +1032,7 @@ class EnemyTile(MapTile):
             self.alive_text = r"""
                                You see a rusty mechanical beast.
                                Made for war, but the war is long over. 
-
+                               Prepare yourself for the War Machine !!
                                
                                                         """                       
             self.dead_text = """
