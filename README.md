@@ -8,8 +8,7 @@ To play the game click on the exe file
 To run game with python, click on game.py 
 
 
-Special thanks to Phillip Johnson, check out his book  'Make your own python text adventure' 
-
+Special thanks to Phillip Johnson, check out his book ' Make Your Own Python Text Adventure' (Apress, 2018)
 The foundation 'game engine' was built using his book 
 
  
